@@ -89,7 +89,6 @@ module.exports = {
     },
   },
   plugins: [
-  	require('cssnano')({ preset: 'default', }), // to minimize code
-  	      require('tailwindcss-filters'), // add tailwind filters plugin to for creating inline class filters
+  	require('tailwindcss-filters'), // add tailwind filters plugin to for creating inline class filters
   ],
 }
