@@ -1,15 +1,13 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   mode: 'jit',
-  purge: [
-  	'./public/**/*.html',
-    './src/**/*.{js,jsx,ts,tsx,vue}',
-  ],
-  content: [
-      "./resources/**/*.blade.php",
-      "./resources/**/*.js",
-      "./resources/**/*.vue",
-    ],
+  purge: {
+	  content: [
+	      "./resources/**/*.blade.php",
+	      "./resources/**/*.js",
+	      "./resources/**/*.vue",
+	  ],
+  }
   theme: {
   	fontFamily: {
   	      'sans': ['Prometo', 'sans-serif'],
